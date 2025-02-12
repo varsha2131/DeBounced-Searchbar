@@ -1,0 +1,128 @@
+/* Container for the entire component */
+.container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input styling */
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Loading and error text styles */
+.loading {
+  color: #f39c12;
+  font-size: 16px;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 16px;
+}
+
+/* Display all recipes in a grid */
+.all-recipes {
+  margin-top: 30px;
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.recipe-card {
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.recipe-card h4 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Suggestions list */
+.suggestionsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Suggestion item styling */
+.suggestionItem {
+  padding: 12px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease;
+}
+
+.suggestionItem:hover {
+  background-color: #f1f1f1;
+}
+
+/* No results message */
+.noResults {
+  font-size: 16px;
+  color: #888;
+  margin-top: 20px;
+}
+
+/* Recipe details section */
+.recipeDetails {
+  margin-top: 20px;
+  text-align: left;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-detail-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
